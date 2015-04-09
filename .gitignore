@@ -1,6 +1,9 @@
 # Ignore Cuckoo Database
 db/cuckoo.db
 
+# Ignore zp_temp
+zp_temp/*
+
 # Ignore Cuckoo logs
 log/*.log
 
