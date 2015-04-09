@@ -30,6 +30,7 @@ def foreach_child(hwnd, lparam):
         "ok",
         "accept",
         "next",
+	"Next >",
         "install",
         "run",
         "agree",
@@ -37,7 +38,7 @@ def foreach_child(hwnd, lparam):
         "don't send",
         "continue",
         "unzip",
-        "open",
+        #"open",
     ]
 
     # List of buttons labels to not click.
@@ -116,4 +117,4 @@ class Human(Auxiliary, Thread):
             click_mouse()
             move_mouse()
             USER32.EnumWindows(EnumWindowsProc(foreach_window), 0)
-            KERNEL32.Sleep(1000)
+            KERNEL32.Sleep(100)
